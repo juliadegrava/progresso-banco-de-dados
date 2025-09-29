@@ -1,0 +1,34 @@
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    marca VARCHAR(50) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    categoria VARCHAR(30) NOT NULL,
+    estoque INT DEFAULT 0
+) 
+
+INSERT INTO produtos (nome, marca, preco, categoria, estoque)
+VALUES 
+('Niacinamide 10% + Zinc 1%', 'The Ordinary', 69.90, 'skincare', 30),
+('Gloss Bomb Universal Lip Luminizer', 'Fenty Beauty', 119.00, 'maquiagem', 50),
+('Soft Pinch Liquid Blush', 'Rare Beauty', 135.00, 'maquiagem', 25),
+('Milky Jelly Cleanser', 'Glossier', 95.00, 'skincare', 40),
+('Hair Repair Oil', 'Olaplex', 189.00, 'cabelos', 20);
+
+
+INSERT INTO produtos (nome, marca, preco, categoria, estoque) VALUES
+('Vitamin C Suspension 23% + HA Spheres 2%', 'The Ordinary', 59.90, 'skincare', 35),
+('Pro Filt’r Foundation', 'Fenty Beauty', 179.00, 'maquiagem', 22),
+('Perfecting Skin Tint', 'Glossier', 142.00, 'skincare', 18),
+('Cloud Paint Blush', 'Glossier', 128.00, 'maquiagem', 15),
+('Cleanser & Moisturizer Duo', 'CeraVe', 89.90, 'skincare', 80),
+('Hydration Shampoo', 'Olaplex', 159.00, 'cabelos', 45),
+('Fragrance Mist Vanilla', 'Sol de Janeiro', 229.90, 'perfumes', 30),
+('Brazilian Crush Body Spray', 'Sol de Janeiro', 189.00, 'perfumes', 12),
+('Hydra Vizor Moisturizer', 'Fenty Skin', 145.00, 'skincare', 25),
+('Power Bullet Matte Lipstick', 'Huda Beauty', 129.00, 'maquiagem', 20),
+('Glow Recipe Watermelon Toner', 'Glow Recipe', 155.00, 'skincare', 15),
+('Detox Shampoo', 'Briogeo', 112.00, 'cabelos', 60),
+('Thermal Protector Spray', 'Tresemmé', 34.90, 'cabelos', 200),
+('Lip Sleeping Mask', 'Laneige', 119.00, 'skincare', 55),
+('Body Splash Fantasy', 'Britney Spears', 79.90, 'perfumes', 8);

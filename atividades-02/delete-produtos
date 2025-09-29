@@ -1,0 +1,8 @@
+DELETE FROM produtos
+WHERE estoque < 30;
+
+DELETE FROM produtos
+WHERE preco < 110;
+
+DELETE FROM produtos
+WHERE marca = 'Britney Spears';
